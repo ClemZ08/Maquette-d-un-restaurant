@@ -269,6 +269,11 @@ footer img {
 }
 
 @media screen and (max-width: 980px){
+  
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
 
   /*                    HEADER                  */
   .container1 {
@@ -352,9 +357,6 @@ footer img {
     width: 100%;
   }
 
-  .container {
-    margin: 10px;
-  }
   .container1 {
     margin: 0;
     padding: 0;
