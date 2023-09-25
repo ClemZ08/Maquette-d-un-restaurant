@@ -332,6 +332,11 @@ footer img {
 
 @media screen and (max-width: 780px){
 
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
+
   nav {
     display: flex;
     flex-direction: column;
