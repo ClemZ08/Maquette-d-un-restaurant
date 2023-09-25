@@ -158,6 +158,10 @@ button {
   border-radius: 1em;
   font-size: 1rem;
 }
+button:hover {
+  background-color: #950000;
+  cursor: pointer;
+}
 .button {
   display: flex;
   justify-content: center;
@@ -174,6 +178,7 @@ button {
 
 .social a {
   margin: 5px;
+  cursor: pointer;
 }
 .fa-facebook-f{
   color: #fff;
@@ -275,6 +280,24 @@ footer img {
     border: #444;
     border: 0.1px solid black;
     width: 100%;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    margin-left: -5%;
+  }
+  .right {
+    width: 100%;
+    margin-left: -5%;
+  }
+  .texta {
+    width: 100%;
+    margin: auto;
+    margin-left: 15px;
   }
 
   .container1 {
