@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Athiti', sans-serif;
+  font-size: 18px;
+}
+h1, h2, h3 {
+  font-family: 'Athiti', sans-serif;
+  font-family: 'Merienda', cursive;
+}
+.container {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+                                                                          /* header */
+
+.container1{
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.header1 {
+  display: flex;
+  width: 50%;
+  justify-content: left;
+  align-items: center;
+}
+.header1 p {
+  font-size: 30px;
+}
+
+nav {
+  text-align: right;
+  margin: auto;
+  width: 50%;
+}
+nav a {
+  background-color: #ebe3db;
+  margin: 15px;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.header1 p::before {
+  content: "★";
+  color: #950000;
+  margin: 10px;
+  font-size: 13px;
+}
+.header1 p::after {
+  content: "★";
+  color: #950000;
+  margin: 10px;
+  font-size: 13px;
+}
+.header1 img {
+  width: 200px;
+}
+
+nav a:hover {
+  background-color: #4c4343;
+}
+#cont {
+  background-color: #4c4343;
+  color: #fff;
+}
+
+
+/* main */
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+h2::before {
+  content: "★";
+  margin: 10px;
+  font-size: 13px;
+  color: #950000;
+}
+h2::after {
+  content: "★";
+  margin: 10px;
+  font-size: 13px;
+  color: #950000;
+}
+
+.contactus {
+  text-align: center;
+}
+.formulaire {
+  background-color: #ebe3db;
+  max-width: 80%;
+  margin: auto;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.left input {
+  border: solid 1.9px #9e9e9e;
+  border-radius: 1em;
+  width: 85%;
+  height: 30px;
+  color: #000000;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.right input {
+  border: solid 1.9px #9e9e9e;
+  border-radius: 1em;
+  width: 80%;
+  height: 30px;
+  color: #000000;
+}
+.texta {
+  margin: 50px;
+  width: 100%;
+}
+.texta textarea {
+  width: 90%;
+  height: 40%;
+  border-radius: 1em;
+}
+
+button {
+  background-color: #4c4343;
+  color: white;
+  width: 35%;
+  height: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  font-size: 1rem;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.maps {
+ max-width: 100%;
+}
+.maps iframe {
+  width: 100%;
+  height: 300px;
+}
+/* footer */
+
+.social a {
+  margin: 5px;
+}
+.fa-facebook-f{
+  color: #fff;
+}
+.fa-twitter-square {
+  color: #fff;
+}
+.fa-instagram {
+  color: #fff;
+}
+
+.trait{
+  width: 85%;
+  margin: auto;
+  border:1px dashed white;
+}
+
+.contact {
+  background-image: url(./ressources/images/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.container2 {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.social {
+  text-align: center;
+  width: 50%;
+}
+.footer {
+	color: #fff;
+	background-color: #444;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
+footer img {
+  width: 60px;
+}
+
+
+@media screen and (max-width: 980px){
+
+  /*                    HEADER                  */
+  .container1 {
+    width: 100%;
+  }
+  .header1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    text-align: center;
+    width: 100%;
+    background-color: #ebe3db;
+    padding: 12px;
+  }
+  nav a {
+    margin: 3em;
+  }
+
+  .formulaire {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .maps {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 780px){
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    margin: 0;
+    border: #444;
+    border: 0.1px solid black;
+    width: 100%;
+  }
+
+  .container {
+    margin: 10px;
+  }
+  .container1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .social {
+    margin: 0;
+    width: 100%;
+}
+}

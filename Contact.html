@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Contact.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Athiti&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Athiti&family=Merienda&display=swap"
+    rel="stylesheet"
+  />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <article class="container1">
+        <div class="header1">
+          <img src="./ressources/images/logo.png" alt="Logo" />
+          <p>FRESHLY RESTAURANT</p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Menu.html">Menus</a>
+          <a id="cont" href="#">Contact</a>
+        </nav>
+      </article>
+    </header>
+    <main class="container">
+      <div class="contactus">
+        <h2>Contact us</h2>
+        <p>If your want to make a reservation, please complete this form.</p>
+        <p>Fields with * are required.</p>
+      </div>
+      <article class="formulaire">
+        <form action="page/page-traitement-donnees" method="post">
+          <div class="form">
+            <div class="left">
+              <h3>Reservation</h3>
+              <label for="Date">*Date</label>
+              <input type="date" id="Date" name="Date" required />
+              <label for="Time">*Time</label>
+              <input type="time" id="Time" name="Time" required />
+              <label for="Guests">*Number of guets </label>
+              <input type="number" id="Guests" name="Guests" min="1" required />
+            </div>
+            <div class="right">
+              <h3>Details</h3>
+              <label for="Name">*Name</label>
+              <input type="text" id="Name" name="Name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="mail" required />
+              <label for="Tel">* Telephone</label>
+              <input type="number" name="Tel" id="tel" required />
+            </div>
+          </div>
+          <div class="texta">
+            <h3>Futher request</h3>
+            <textarea name="text" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="button">
+            <button>RESERVE</button>
+          </div>
+        </form>
+      </article>
+      <h2>Our Location</h2>
+      <div class="maps">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00749504566194%2C40.732039370626225%2C-73.99510324001314%2C40.73721796983282&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+      </div>
+    </main>
+    <footer>
+      <article class="contact">
+        <div class="container2">
+        <div class="social">
+          <h3>Opening hours</h3>
+          <div class="trait"></div>
+          <p>
+            Monday: Closed <br />Tue-Wed : 9am - 10pm <br />Thu-Fri : 9am - 10pm
+            <br />Sat-Sun : 5pm - 10pm
+          </p>
+        </div>
+        <div class="social">
+          <h3>Contact</h3>
+          <div class="trait"></div>
+          <p>
+            13 Christopher Street <br />
+            New York, <br />
+            NY 10014-3543
+            <br />
+            <br />
+            +01 2000 800 9999
+          </p>
+        </div>
+        <div class="social">
+          <h3>Social networks</h3>
+          <div class="trait"></div>
+          <p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-2x fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+          </p>
+        </div>
+        </div>
+      </article>
+      <article class="footer">
+        <p>
+          <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">
+            <img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" /></a>
+        </p>
+        <p>
+          Ce matériel pédagogique est la propriété de la<a rel="license"
+            href="https://3wa.fr/propriete-materiel-pedagogique/" id="footer">
+            3W Academy</a>. Cet exercice a été réalisé par Catherine Denos.
+        </p>
+      </article>
+    </footer>
+  </body>
+</html>
