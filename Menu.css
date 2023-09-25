@@ -251,7 +251,10 @@ footer img {
 }
 
 @media screen and (max-width: 780px){
-
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+    }
 
   nav {
     display: flex;
@@ -293,9 +296,6 @@ footer img {
     margin: 20px;
   }
 
-  .container {
-    margin: 10px;
-  }
   .container1 {
     margin: 0;
     padding: 0;
