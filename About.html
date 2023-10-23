@@ -12,17 +12,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Merienda&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <title>Document</title>
 </head>
 
 <body>
   <header>
     <article class="container1">
-      <div class="header1">
+      <div class="header1" data-aos="fade-left">
         <img src="./ressources/images/logo.png" alt="Logo" />
         <p>FRESHLY RESTAURANT</p>
       </div>
-      <nav>
+      <nav data-aos="fade-right">
         <a href="index.html">Home</a>
         <a id="about" href="#">About</a>
         <a href="Menu.html">Menus</a>
@@ -31,8 +32,8 @@
     </article>
   </header>
   <main class="container">
-    <h2>About us</h2>
-    <div class="div1">
+    <h2 data-aos="fade-up">About us</h2>
+    <div class="div1" data-aos="fade-up">
       <div>
         <p>
           Welcome to Freshly Restaurant, a classic New York City restaurant,
@@ -53,8 +54,8 @@
         </video>
       </div>
     </div>
-    <h2>Private dining</h2>
-    <div class="div1">
+    <h2 data-aos="fade-down">Private dining</h2>
+    <div class="div1" data-aos="fade-down">
       <p>
         Elegant and timeless, Freshly Restaurant features four private dining
         areas that offer real versatility, whether you are having an intimate
@@ -74,7 +75,7 @@
         unique, undeniably New York event.
       </p>
     </div>
-    <article class="img">
+    <article class="img" data-aos="flip-left">
       <div class="img1">
         <img src="./ressources/images/dining-1.jpg" alt="" />
         <p>Can welcome up to 24 guests</p>
@@ -89,7 +90,7 @@
       </div>
     </article>
   </main>
-  <footer>
+  <footer data-aos="zoom-in">
     <article class="contact">
       <div class="container2">
       <div class="social">
@@ -129,6 +130,14 @@
       Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="https://www.cath2nos.com">Catherine Denos</a>.
     </article>
   </footer>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease', 
+      once: true,     
+    });
+  </script>
 </body>
 
 </html>
