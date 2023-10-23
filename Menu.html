@@ -12,16 +12,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Merienda&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 </head>
 
 <body>
   <header>
     <article class="container1">
-      <div class="header1">
+      <div class="header1" data-aos="fade-left">
         <img src="./ressources/images/logo.png" alt="Logo" />
         <p>FRESHLY RESTAURANT</p>
       </div>
-      <nav>
+      <nav data-aos="fade-right">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
         <a  id="menu" href="#">Menus</a>
@@ -31,15 +32,15 @@
   </header>
   <main class="container">
     <div class="content">
-      <h2>Details of our menus</h2>
-      <p>Choose your main course according to your menu !</p>
-      <div class="controls">
+      <h2 data-aos="fade-up">Details of our menus</h2>
+      <p data-aos="fade-down">Choose your main course according to your menu !</p>
+      <div class="controls" data-aos="fade-up">
         <button type="button" class="control" data-filter="all">ALL</button>
         <button type="button" class="control" data-filter=".meat">MEAT</button>
         <button type="button" class="control" data-filter=".fish">FISH</button>
         <button type="button" class="control" data-filter=".vegan">VEGAN</button>
       </div>
-      <div class="products images">
+      <div class="products images" data-aos="fade-down">
         <div class="mix meat">
           <img src="./ressources/menus/meat-01.jpg" alt="Shoe" />
           <img src="./ressources/menus/meat-02.jpg" alt="Shoe" />
@@ -57,19 +58,19 @@
         </div>
       </div>
     </div>
-    <h2>Desserts</h2>
-    <p class="p">Here are the deserts you can choose to finish your meal (included in your menu).</p>
-    <article class="images">
+    <h2 data-aos="fade-up">Desserts</h2>
+    <p class="p" data-aos="fade-down">Here are the deserts you can choose to finish your meal (included in your menu).</p>
+    <article class="images" data-aos="fade-down">
       <div class="dessert">
         <img src="./ressources/menus/desert-01.jpg" alt="">
         <img src="./ressources/menus/desert-02.jpg" alt="">
         <img src="./ressources/menus/desert-03.jpg" alt="">
       </div>
     </article>
-    <h2>Cocktails</h2>
-    <p class="p">Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included
+    <h2 data-aos="fade-up">Cocktails</h2>
+    <p class="p" data-aos="fade-down">Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included
       in the menu).</p>
-    <article class="images">
+    <article class="images" data-aos="fade-up">
       <div class="cocktails">
         <img src="./ressources/menus/drink-01.jpg" alt="">
         <img src="./ressources/menus/drink-02.jpg" alt="">
@@ -77,7 +78,7 @@
       </div>
     </article>
   </main>
-  <footer>
+  <footer data-aos="zoom-in">
     <article class="contact">
       <div class="container2">
       <div class="social">
@@ -118,6 +119,12 @@
     </article>
   </footer>
   <script src="./mixitup.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>AOS.init({
+    duration: 1000,
+    easing: 'ease', 
+    once: true,     
+  });</script>
   <script>
     var products = document.querySelector('.products');
     var mixer = mixitup(products);
