@@ -371,10 +371,10 @@ footer img {
   }
 
   nav a {
-    margin: 0;
-    border: #444;
+    margin: 0 auto;
     border: 0.1px solid black;
     width: 100%;
+    text-align: center;
   }
 
   .container1 {

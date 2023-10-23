@@ -214,9 +214,23 @@ img:hover {
 footer img {
   width: 60px;
 }
-
-
-
+@media screen and (min-width: 980px) and (max-width:1200px) {
+  html,body{
+    width:100%;
+    }
+    header {
+      margin: 20px;
+    }
+    .fade {
+      margin: 20px;
+    }
+    .mid {
+      margin: 20px;
+    }
+    .menu {
+      margin: 20px;
+    }
+}
 
 @media screen and (max-width: 980px){
 

@@ -14,11 +14,12 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <header>
+  <header data-aos="fade-up">
     <article class="container1">
       <div class="header1">
         <img src="./ressources/images/logo.png" alt="Logo" />
@@ -33,13 +34,13 @@
     </article>
   </header>
   <main class="container">
-    <div class="fade">
+    <div class="fade" data-aos="fade-up">
       <img src="./ressources/images/slider-01.jpg" alt="" />
       <img src="./ressources/images/slider-02.jpg" alt="" />
       <img src="./ressources/images/slider-03.jpg" alt="" />
     </div>
-    <h2>Welcome to Freshly Restaurant</h2>
-    <article class="imgLeft reveal">
+    <h2 data-aos="fade-up">Welcome to Freshly Restaurant</h2>
+    <article class="imgLeft reveal" data-aos="fade-down">
       <div class="mid">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
@@ -183,11 +184,21 @@
       Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="https://www.cath2nos.com">Catherine Denos</a>.
     </article>
   </footer>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Durée de l'animation en millisecondes.
+      easing: 'ease', // Lissage par défaut pour les animations AOS.
+      once: true,     // Détermine si l'animation doit se produire une seule fois lors du défilement.
+    });
+  </script>
+  
 </body>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="./slick-1.8.1/slick/slick.js"></script>
 <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
 <script src="./js/slickkk.js"></script>
+
 
 </html>
